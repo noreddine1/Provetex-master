@@ -33,7 +33,6 @@
             this.Button_save = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Textbox_phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Textbox_adrs = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Textbox_name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SuspendLayout();
             // 
             // Button_back
@@ -90,6 +89,9 @@
             // 
             // Textbox_phone
             // 
+            this.Textbox_phone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Textbox_phone.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Textbox_phone.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Textbox_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Textbox_phone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Textbox_phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
@@ -100,8 +102,9 @@
             this.Textbox_phone.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox_phone.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.Textbox_phone.LineThickness = 3;
-            this.Textbox_phone.Location = new System.Drawing.Point(71, 272);
+            this.Textbox_phone.Location = new System.Drawing.Point(71, 207);
             this.Textbox_phone.Margin = new System.Windows.Forms.Padding(4);
+            this.Textbox_phone.MaxLength = 32767;
             this.Textbox_phone.Name = "Textbox_phone";
             this.Textbox_phone.Size = new System.Drawing.Size(181, 33);
             this.Textbox_phone.TabIndex = 27;
@@ -109,6 +112,9 @@
             // 
             // Textbox_adrs
             // 
+            this.Textbox_adrs.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Textbox_adrs.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Textbox_adrs.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Textbox_adrs.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Textbox_adrs.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Textbox_adrs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
@@ -119,33 +125,15 @@
             this.Textbox_adrs.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox_adrs.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.Textbox_adrs.LineThickness = 3;
-            this.Textbox_adrs.Location = new System.Drawing.Point(71, 178);
+            this.Textbox_adrs.Location = new System.Drawing.Point(71, 102);
             this.Textbox_adrs.Margin = new System.Windows.Forms.Padding(4);
+            this.Textbox_adrs.MaxLength = 32767;
             this.Textbox_adrs.Name = "Textbox_adrs";
             this.Textbox_adrs.Size = new System.Drawing.Size(259, 33);
             this.Textbox_adrs.TabIndex = 26;
             this.Textbox_adrs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Textbox_name
-            // 
-            this.Textbox_name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Textbox_name.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
-            this.Textbox_name.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
-            this.Textbox_name.HintText = "Fournisseur";
-            this.Textbox_name.isPassword = false;
-            this.Textbox_name.LineFocusedColor = System.Drawing.Color.Blue;
-            this.Textbox_name.LineIdleColor = System.Drawing.Color.Gray;
-            this.Textbox_name.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.Textbox_name.LineThickness = 3;
-            this.Textbox_name.Location = new System.Drawing.Point(71, 86);
-            this.Textbox_name.Margin = new System.Windows.Forms.Padding(4);
-            this.Textbox_name.Name = "Textbox_name";
-            this.Textbox_name.Size = new System.Drawing.Size(259, 31);
-            this.Textbox_name.TabIndex = 25;
-            this.Textbox_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // F_CU
+            // frm_create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,9 +143,8 @@
             this.Controls.Add(this.Button_save);
             this.Controls.Add(this.Textbox_phone);
             this.Controls.Add(this.Textbox_adrs);
-            this.Controls.Add(this.Textbox_name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "F_CU";
+            this.Name = "frm_create";
             this.Text = "F_CU";
             this.Load += new System.EventHandler(this.F_CU_Load);
             this.ResumeLayout(false);
@@ -170,6 +157,5 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Button_save;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_phone;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_adrs;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_name;
     }
 }
