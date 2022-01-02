@@ -127,7 +127,8 @@ namespace Provetex
 
         private void button_list_articles_Click(object sender, EventArgs e)
         {
-
+            Form form = new Item.frm_index();
+            Panelaffiche(form);
         }
     }
 }
