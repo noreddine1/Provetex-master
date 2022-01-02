@@ -39,8 +39,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Textbox_searsh = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Dropdown_articles = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_list)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Btn_refresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -107,11 +105,12 @@
             // 
             // Button_add
             // 
+            this.Button_add.Active = false;
             this.Button_add.Activecolor = System.Drawing.Color.Silver;
             this.Button_add.BackColor = System.Drawing.Color.RoyalBlue;
             this.Button_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Button_add.BorderRadius = 0;
-            this.Button_add.ButtonText = "Ajouter un article d un fournisseur";
+            this.Button_add.ButtonText = "Ajouter un article";
             this.Button_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_add.DisabledColor = System.Drawing.Color.RoyalBlue;
             this.Button_add.Iconcolor = System.Drawing.Color.Transparent;
@@ -132,9 +131,9 @@
             this.Button_add.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.Button_add.OnHoverTextColor = System.Drawing.Color.White;
             this.Button_add.selected = false;
-            this.Button_add.Size = new System.Drawing.Size(257, 33);
+            this.Button_add.Size = new System.Drawing.Size(151, 33);
             this.Button_add.TabIndex = 10;
-            this.Button_add.Text = "Ajouter un article d un fournisseur";
+            this.Button_add.Text = "Ajouter un article";
             this.Button_add.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Button_add.Textcolor = System.Drawing.Color.White;
             this.Button_add.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,6 +151,9 @@
             // 
             // Textbox_searsh
             // 
+            this.Textbox_searsh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Textbox_searsh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Textbox_searsh.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Textbox_searsh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Textbox_searsh.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Textbox_searsh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -164,6 +166,7 @@
             this.Textbox_searsh.LineThickness = 3;
             this.Textbox_searsh.Location = new System.Drawing.Point(541, 143);
             this.Textbox_searsh.Margin = new System.Windows.Forms.Padding(4);
+            this.Textbox_searsh.MaxLength = 32767;
             this.Textbox_searsh.Name = "Textbox_searsh";
             this.Textbox_searsh.Size = new System.Drawing.Size(211, 33);
             this.Textbox_searsh.TabIndex = 8;
@@ -172,49 +175,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sunshine", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(8, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 43);
+            this.label1.Size = new System.Drawing.Size(140, 42);
             this.label1.TabIndex = 7;
             this.label1.Text = "Articels";
             // 
-            // Dropdown_articles
-            // 
-            this.Dropdown_articles.BackColor = System.Drawing.Color.Transparent;
-            this.Dropdown_articles.BorderRadius = 3;
-            this.Dropdown_articles.DisabledColor = System.Drawing.Color.Gray;
-            this.Dropdown_articles.ForeColor = System.Drawing.Color.White;
-            this.Dropdown_articles.Location = new System.Drawing.Point(279, 143);
-            this.Dropdown_articles.Name = "Dropdown_articles";
-            this.Dropdown_articles.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.Dropdown_articles.onHoverColor = System.Drawing.Color.RoyalBlue;
-            this.Dropdown_articles.selectedIndex = -1;
-            this.Dropdown_articles.Size = new System.Drawing.Size(104, 33);
-            this.Dropdown_articles.TabIndex = 12;
-            // 
-            // bunifuDropdown1
-            // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(389, 143);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(145, 33);
-            this.bunifuDropdown1.TabIndex = 13;
-            // 
-            // F_RD
+            // frm_index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 580);
-            this.Controls.Add(this.bunifuDropdown1);
-            this.Controls.Add(this.Dropdown_articles);
             this.Controls.Add(this.DataGrid_list);
             this.Controls.Add(this.Btn_refresh);
             this.Controls.Add(this.Button_add);
@@ -222,7 +195,7 @@
             this.Controls.Add(this.Textbox_searsh);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "F_RD";
+            this.Name = "frm_index";
             this.Text = "F_RD";
             this.Load += new System.EventHandler(this.F_RD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_list)).EndInit();
@@ -243,7 +216,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_searsh;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuDropdown Dropdown_articles;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
     }
 }
