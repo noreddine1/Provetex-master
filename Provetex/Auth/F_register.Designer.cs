@@ -147,10 +147,7 @@
             this.Dropdown_question.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Dropdown_question.DisabledColor = System.Drawing.Color.Gray;
             this.Dropdown_question.ForeColor = System.Drawing.Color.White;
-            this.Dropdown_question.Items = new string[] {
-        "What is you favorit day ?",
-        "What is you favorit place ?",
-        "What is the name of your favorit friend ?"};
+
             this.Dropdown_question.Location = new System.Drawing.Point(40, 156);
             this.Dropdown_question.Name = "Dropdown_question";
             this.Dropdown_question.NomalColor = System.Drawing.Color.RoyalBlue;

@@ -185,7 +185,6 @@
             this.Dropdown_articles.BorderRadius = 3;
             this.Dropdown_articles.DisabledColor = System.Drawing.Color.Gray;
             this.Dropdown_articles.ForeColor = System.Drawing.Color.White;
-            this.Dropdown_articles.Items = new string[0];
             this.Dropdown_articles.Location = new System.Drawing.Point(279, 143);
             this.Dropdown_articles.Name = "Dropdown_articles";
             this.Dropdown_articles.NomalColor = System.Drawing.Color.RoyalBlue;
@@ -200,7 +199,6 @@
             this.bunifuDropdown1.BorderRadius = 3;
             this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[0];
             this.bunifuDropdown1.Location = new System.Drawing.Point(389, 143);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.NomalColor = System.Drawing.Color.RoyalBlue;
