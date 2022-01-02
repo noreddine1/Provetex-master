@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Provetex.Item
 {
-    public partial class F_RD : Form
+    public partial class frm_index : Form
     {
-        public F_RD()
+        public frm_index()
         {
             InitializeComponent();
         }
