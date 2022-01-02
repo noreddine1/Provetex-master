@@ -24,11 +24,32 @@ namespace Provetex.Item
 
         private void F_RD_Load(object sender, EventArgs e)
         {
-
+            Refresh();
         }
 
         private void DataGrid_list_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+#pragma warning disable CS0114 // Member hides inherited member; missing override keyword
+        private void Refresh()
+#pragma warning restore CS0114 // Member hides inherited member; missing override keyword
+        {
+
+            DataGrid_list.DataSource = Program.provetex.items.Select(item => new
+            {
+                ID = item.C_id_item,
+                Name = item.C_name_item
+                //ID = sup.C_id_supplier,
+                //FOURNISSEUR = sup.C_name_supplier,
+                //ADRESSE = sup.C_adress_supplier,
+                //PHONE = sup.C_phone_supplier,
+                //EMAIL = sup.C_email_supplier,
+                //AJOUTER = sup.created_at,
+                //UPDATE = sup.update_at
+            }).ToList();
+            DataGrid_list.Columns["ID"].Visible = false;
 
         }
     }
