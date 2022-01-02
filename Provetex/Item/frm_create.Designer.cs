@@ -1,6 +1,6 @@
 ﻿namespace Provetex.Item
 {
-    partial class F_CU
+    partial class frm_create
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_CU));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_create));
             this.Button_back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Button_save = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Textbox_phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();

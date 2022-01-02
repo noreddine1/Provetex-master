@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Provetex.Item
 {
-    public partial class F_CU : Form
+    public partial class frm_create : Form
     {
-        public F_CU()
+        public frm_create()
         {
             InitializeComponent();
         }
