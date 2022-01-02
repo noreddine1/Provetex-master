@@ -19,7 +19,14 @@ namespace Provetex.Item
 
         private void Button_add_Click(object sender, EventArgs e)
         {
-
+            if (Application.OpenForms.OfType<Item.frm_create>().Any())
+                MessageBox.Show("Form is opened");
+            else
+            {
+                Form form = new Item.frm_create();
+                form.TopMost = true;//katb9a lform dima lfougue
+                form.Show();
+            }
         }
 
         private void F_RD_Load(object sender, EventArgs e)
