@@ -32,7 +32,7 @@
             this.Button_back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Button_save = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Textbox_phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Textbox_adrs = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_nom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SuspendLayout();
             // 
             // Button_back
@@ -110,28 +110,28 @@
             this.Textbox_phone.TabIndex = 27;
             this.Textbox_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Textbox_adrs
+            // txt_nom
             // 
-            this.Textbox_adrs.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.Textbox_adrs.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.Textbox_adrs.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Textbox_adrs.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Textbox_adrs.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_adrs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
-            this.Textbox_adrs.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
-            this.Textbox_adrs.HintText = "Nom d\'article";
-            this.Textbox_adrs.isPassword = false;
-            this.Textbox_adrs.LineFocusedColor = System.Drawing.Color.Blue;
-            this.Textbox_adrs.LineIdleColor = System.Drawing.Color.Gray;
-            this.Textbox_adrs.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.Textbox_adrs.LineThickness = 3;
-            this.Textbox_adrs.Location = new System.Drawing.Point(71, 102);
-            this.Textbox_adrs.Margin = new System.Windows.Forms.Padding(4);
-            this.Textbox_adrs.MaxLength = 32767;
-            this.Textbox_adrs.Name = "Textbox_adrs";
-            this.Textbox_adrs.Size = new System.Drawing.Size(259, 33);
-            this.Textbox_adrs.TabIndex = 26;
-            this.Textbox_adrs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_nom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_nom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_nom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_nom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_nom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
+            this.txt_nom.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
+            this.txt_nom.HintText = "Nom d\'article";
+            this.txt_nom.isPassword = false;
+            this.txt_nom.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txt_nom.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_nom.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.txt_nom.LineThickness = 3;
+            this.txt_nom.Location = new System.Drawing.Point(71, 102);
+            this.txt_nom.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nom.MaxLength = 32767;
+            this.txt_nom.Name = "txt_nom";
+            this.txt_nom.Size = new System.Drawing.Size(259, 33);
+            this.txt_nom.TabIndex = 26;
+            this.txt_nom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // frm_create
             // 
@@ -142,7 +142,7 @@
             this.Controls.Add(this.Button_back);
             this.Controls.Add(this.Button_save);
             this.Controls.Add(this.Textbox_phone);
-            this.Controls.Add(this.Textbox_adrs);
+            this.Controls.Add(this.txt_nom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_create";
             this.Text = "F_CU";
@@ -156,6 +156,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Button_back;
         private Bunifu.Framework.UI.BunifuThinButton2 Button_save;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_phone;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_adrs;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nom;
     }
 }
