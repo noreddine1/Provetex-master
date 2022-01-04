@@ -33,6 +33,7 @@
             this.Button_save = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Textbox_phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_nom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.comboBox_suplier = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Button_back
@@ -102,7 +103,7 @@
             this.Textbox_phone.LineIdleColor = System.Drawing.Color.Gray;
             this.Textbox_phone.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.Textbox_phone.LineThickness = 3;
-            this.Textbox_phone.Location = new System.Drawing.Point(71, 207);
+            this.Textbox_phone.Location = new System.Drawing.Point(71, 253);
             this.Textbox_phone.Margin = new System.Windows.Forms.Padding(4);
             this.Textbox_phone.MaxLength = 32767;
             this.Textbox_phone.Name = "Textbox_phone";
@@ -133,12 +134,21 @@
             this.txt_nom.TabIndex = 26;
             this.txt_nom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // comboBox_suplier
+            // 
+            this.comboBox_suplier.FormattingEnabled = true;
+            this.comboBox_suplier.Location = new System.Drawing.Point(71, 200);
+            this.comboBox_suplier.Name = "comboBox_suplier";
+            this.comboBox_suplier.Size = new System.Drawing.Size(259, 21);
+            this.comboBox_suplier.TabIndex = 31;
+            // 
             // frm_create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(400, 470);
+            this.Controls.Add(this.comboBox_suplier);
             this.Controls.Add(this.Button_back);
             this.Controls.Add(this.Button_save);
             this.Controls.Add(this.Textbox_phone);
@@ -157,5 +167,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Button_save;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_phone;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nom;
+        private System.Windows.Forms.ComboBox comboBox_suplier;
     }
 }

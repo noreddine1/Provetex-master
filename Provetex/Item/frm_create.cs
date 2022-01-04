@@ -19,7 +19,9 @@ namespace Provetex.Item
 
         private void F_CU_Load(object sender, EventArgs e)
         {
-
+            comboBox_suplier.DataSource = Program.provetex.suppliers.ToList();
+            comboBox_suplier.ValueMember = "C_id_supplier";
+            comboBox_suplier.DisplayMember = "C_name_supplier";
         }
 
         private void Button_save_Click(object sender, EventArgs e)
