@@ -293,11 +293,6 @@
     <Compile Include="Purchase\F_RD.Designer.cs">
       <DependentUpon>F_RD.cs</DependentUpon>
     </Compile>
-    <Compile Include="suplierDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>suplierDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="supplier.cs">
       <DependentUpon>Provetex.tt</DependentUpon>
     </Compile>
@@ -384,17 +379,6 @@
     </EntityDeploy>
     <None Include="Provetex.edmx.diagram">
       <DependentUpon>Provetex.edmx</DependentUpon>
-    </None>
-    <None Include="suplierDataSet.xsc">
-      <DependentUpon>suplierDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="suplierDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>suplierDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="suplierDataSet.xss">
-      <DependentUpon>suplierDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
