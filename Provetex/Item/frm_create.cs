@@ -19,6 +19,8 @@ namespace Provetex.Item
 
         private void F_CU_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'suplierDataSet.supplier'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.supplierTableAdapter.Fill(this.suplierDataSet.supplier);
 
         }
 
