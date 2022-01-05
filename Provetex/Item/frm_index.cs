@@ -24,7 +24,7 @@ namespace Provetex.Item
             else
             {
                 Form form = new Item.frm_create();
-                form.TopMost = true;//katb9a lform dima lfougue
+                //form.TopMost = true;//katb9a lform dima lfougue
                 form.Show();
             }
         }

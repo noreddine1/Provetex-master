@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_create));
             this.Button_back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Button_save = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Textbox_phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Textbox_price = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_nom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.comboBox_suplier = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -88,28 +88,28 @@
             this.Button_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Button_save.Click += new System.EventHandler(this.Button_save_Click);
             // 
-            // Textbox_phone
+            // Textbox_price
             // 
-            this.Textbox_phone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.Textbox_phone.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.Textbox_phone.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Textbox_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Textbox_phone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
-            this.Textbox_phone.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
-            this.Textbox_phone.HintText = "Prix";
-            this.Textbox_phone.isPassword = false;
-            this.Textbox_phone.LineFocusedColor = System.Drawing.Color.Blue;
-            this.Textbox_phone.LineIdleColor = System.Drawing.Color.Gray;
-            this.Textbox_phone.LineMouseHoverColor = System.Drawing.Color.Gray;
-            this.Textbox_phone.LineThickness = 3;
-            this.Textbox_phone.Location = new System.Drawing.Point(71, 253);
-            this.Textbox_phone.Margin = new System.Windows.Forms.Padding(4);
-            this.Textbox_phone.MaxLength = 32767;
-            this.Textbox_phone.Name = "Textbox_phone";
-            this.Textbox_phone.Size = new System.Drawing.Size(181, 33);
-            this.Textbox_phone.TabIndex = 27;
-            this.Textbox_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Textbox_price.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Textbox_price.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Textbox_price.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Textbox_price.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Textbox_price.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
+            this.Textbox_price.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(5)))));
+            this.Textbox_price.HintText = "Prix";
+            this.Textbox_price.isPassword = false;
+            this.Textbox_price.LineFocusedColor = System.Drawing.Color.Blue;
+            this.Textbox_price.LineIdleColor = System.Drawing.Color.Gray;
+            this.Textbox_price.LineMouseHoverColor = System.Drawing.Color.Gray;
+            this.Textbox_price.LineThickness = 3;
+            this.Textbox_price.Location = new System.Drawing.Point(71, 253);
+            this.Textbox_price.Margin = new System.Windows.Forms.Padding(4);
+            this.Textbox_price.MaxLength = 32767;
+            this.Textbox_price.Name = "Textbox_price";
+            this.Textbox_price.Size = new System.Drawing.Size(181, 33);
+            this.Textbox_price.TabIndex = 27;
+            this.Textbox_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_nom
             // 
@@ -151,7 +151,7 @@
             this.Controls.Add(this.comboBox_suplier);
             this.Controls.Add(this.Button_back);
             this.Controls.Add(this.Button_save);
-            this.Controls.Add(this.Textbox_phone);
+            this.Controls.Add(this.Textbox_price);
             this.Controls.Add(this.txt_nom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_create";
@@ -165,7 +165,7 @@
 
         private Bunifu.Framework.UI.BunifuThinButton2 Button_back;
         private Bunifu.Framework.UI.BunifuThinButton2 Button_save;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_phone;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Textbox_price;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nom;
         private System.Windows.Forms.ComboBox comboBox_suplier;
     }
