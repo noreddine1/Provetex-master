@@ -27,11 +27,20 @@ namespace Provetex.Item
 
         private void Button_save_Click(object sender, EventArgs e)
         {
+            save();
+        }
+
+        private void Button_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void save()
+        {
             var Name = txt_nom.Text;
             IQueryable<int> item = from c in Program.provetex.items
-                       where c.C_name_item == Name
-                       select c.C_id_item;
-            if (item.Count()==0)
+                                   where c.C_name_item == Name
+                                   select c.C_id_item;
+            if (item.Count() == 0)
             {
                 itemModel.C_name_item = txt_nom.Text;
                 //add item to table item
@@ -48,18 +57,13 @@ namespace Provetex.Item
             else
             {
                 // add suplier_item
-                model.C_item =item.FirstOrDefault();
+                model.C_item = item.FirstOrDefault();
                 model.C_supplier = int.Parse(comboBox_suplier.SelectedValue.ToString());
                 model.C_price = decimal.Parse(Textbox_price.Text);
                 Program.provetex.suppliers_items.Add(model);
                 Program.provetex.SaveChanges();
                 MessageBox.Show("articl ajouter avec succé");
             }
-        }
-
-        private void Button_back_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
