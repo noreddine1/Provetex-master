@@ -46,6 +46,7 @@ namespace Provetex
         public static int? id_item;
         public static int? id_sup_item;
         public static bool updateSupplier = false;
+        public static bool updateItem = false;
 
     }
 }
