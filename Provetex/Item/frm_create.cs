@@ -20,9 +20,7 @@ namespace Provetex.Item
         suppliers_items model= new suppliers_items();
         private void F_CU_Load(object sender, EventArgs e)
         {
-            comboBox_suplier.DataSource = Program.provetex.suppliers.ToList();
-            comboBox_suplier.ValueMember = "C_id_supplier";
-            comboBox_suplier.DisplayMember = "C_name_supplier";
+            Refresh();
         }
 
         private void Button_save_Click(object sender, EventArgs e)
@@ -64,6 +62,13 @@ namespace Provetex.Item
                 Program.provetex.SaveChanges();
                 MessageBox.Show("articl ajouter avec succé");
             }
+        }
+
+        private void Refresh()
+        {
+            comboBox_suplier.DataSource = Program.provetex.suppliers.ToList();
+            comboBox_suplier.ValueMember = "C_id_supplier";
+            comboBox_suplier.DisplayMember = "C_name_supplier";
         }
     }
 }
